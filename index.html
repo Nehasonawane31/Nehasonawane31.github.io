@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neha Sonawane | Java Full Stack Developer & Data Analyst</title>
+  <meta name="description" content="Portfolio of Neha Sonawane - MCA Graduate, Java Full Stack Developer (Spring Boot, REST APIs, MySQL/PostgreSQL) and Data Analyst (Python, Power BI, SQL, EDA).">
+  <meta name="keywords" content="Neha Sonawane, Java Developer, Spring Boot, Data Analyst, Power BI, Python, MCA, Pune, Portfolio">
+  <meta name="author" content="Neha Sonawane">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Neha Sonawane | Portfolio">
+  <meta property="og:description" content="Java Full Stack Developer & Data Analyst | Spring Boot, Python, Power BI, SQL">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Animated Background -->
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-code">&lt;</span>
+        <span class="brand-name">Neha.dev</span>
+        <span class="brand-code">/&gt;</span>
+      </a>
+
+      <div class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> About</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a>
+        <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+        <a href="#contact" class="nav-link"><i class="fa-regular fa-envelope"></i> Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+
+        <!-- Resume Button -->
+        <button id="open-resume-btn" class="btn btn-sm btn-outline">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>Resume</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-toggle" class="btn-icon mobile-only" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Status Badge -->
+          <div class="status-badge">
+            <span class="status-pulse"></span>
+            <span>Actively Seeking Full-Time Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Neha Sonawane</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">I build </span>
+            <span id="typed-role" class="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            MCA Graduate from <strong>Savitribai Phule Pune University</strong> with hands-on experience in 
+            <strong>Java &amp; Spring Boot backend development</strong> and <strong>Data Analysis &amp; Visualization</strong>. 
+            Passionate about architecting robust REST APIs, scalable database schemas, and deriving actionable insights from complex data.
+          </p>
+
+          <!-- Quick Persona Filter -->
+          <div class="persona-filter-box">
+            <span class="filter-label"><i class="fa-solid fa-sliders"></i> Tailor View for Role:</span>
+            <div class="persona-btn-group">
+              <button class="persona-btn active" data-persona="all">All-Rounder</button>
+              <button class="persona-btn" data-persona="java">Java Backend Developer</button>
+              <button class="persona-btn" data-persona="data">Data Analyst / Python</button>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            <button id="hero-resume-btn" class="btn btn-secondary">
+              <i class="fa-solid fa-file-lines"></i> View Resume
+            </button>
+            <button id="copy-email-btn" class="btn btn-glass" data-email="sonawanen082@gmail.com">
+              <i class="fa-regular fa-copy"></i> <span id="copy-email-text">Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/neha-sonawane" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Nehasonawane31" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:sonawanen082@gmail.com" class="social-icon" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+919322228438" class="social-icon" title="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Floating Stats -->
+        <div class="hero-card-wrapper">
+          <div class="hero-card glass-panel">
+            <div class="profile-header">
+              <div class="avatar-ring">
+                <div class="avatar-inner">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+              </div>
+              <div class="profile-meta">
+                <h3>Neha Sonawane</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra, India</p>
+                <div class="cgpa-pill">
+                  <i class="fa-solid fa-star"></i> 8.10 CGPA (BCS &amp; MCA)
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini Terminal Box -->
+            <div class="terminal-preview">
+              <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">neha@developer:~$ info</span>
+              </div>
+              <div class="terminal-body">
+                <p><span class="t-key">const</span> <span class="t-var">developer</span> = {</p>
+                <p class="t-indent"><span class="t-prop">focus:</span> <span class="t-str">"Java, Spring Boot, Data Analytics"</span>,</p>
+                <p class="t-indent"><span class="t-prop">experience:</span> <span class="t-num">4</span> <span class="t-comment">// Internships completed</span>,</p>
+                <p class="t-indent"><span class="t-prop">internships:</span> [<span class="t-str">"Amdox"</span>, <span class="t-str">"TechOctanet"</span>, <span class="t-str">"NovaNector"</span>],</p>
+                <p class="t-indent"><span class="t-prop">status:</span> <span class="t-str">"Ready to make an immediate impact!"</span></p>
+                <p>};</p>
+              </div>
+            </div>
+
+            <!-- Metric Cards -->
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Internship Roles</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">6+</span>
+                <span class="stat-label">Full Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">8.10</span>
+                <span class="stat-label">Academic CGPA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get to know me</span>
+          <h2 class="section-title">About <span class="gradient-text">Neha</span></h2>
+          <p class="section-desc">A passionate technologist bridging backend engineering and intelligent data analytics.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text glass-panel">
+            <h3>Crafting High-Performance Systems &amp; Unlocking Data Insights</h3>
+            <p>
+              I am an MCA postgraduate student at <strong>Savitribai Phule Pune University</strong> with a solid academic track record (<strong>8.10 CGPA</strong>). 
+              My journey combines the discipline of building <strong>enterprise-grade backend systems in Java &amp; Spring Boot</strong> with the analytical mindset of <strong>data analysis and machine learning using Python, SQL, and Power BI</strong>.
+            </p>
+            <p>
+              Through real-world internships at <strong>Amdox</strong>, <strong>TechOctanet Services</strong>, and <strong>NovaNector Services</strong>, I have engineered workflow management systems supporting 40+ active users, optimized relational queries by 20%, and transformed raw datasets into interactive visual dashboards.
+            </p>
+
+            <div class="highlights-row">
+              <div class="highlight-chip">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Clean MVC &amp; RESTful Architectures</span>
+              </div>
+              <div class="highlight-chip">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Exploratory Data Analysis (EDA) &amp; BI</span>
+              </div>
+              <div class="highlight-chip">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Database Optimization (PostgreSQL / MySQL)</span>
+              </div>
+              <div class="highlight-chip">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Fast Learner &amp; Agile Team Collaborator</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Info Cards -->
+          <div class="about-cards-col">
+            <div class="info-card glass-panel">
+              <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="info-body">
+                <h4>Education</h4>
+                <p>MCA (2024–2026) &amp; BCS (2021–2024)</p>
+                <span class="info-sub">Savitribai Phule Pune University</span>
+              </div>
+            </div>
+
+            <div class="info-card glass-panel">
+              <div class="info-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="info-body">
+                <h4>Core Specialties</h4>
+                <p>Java Full Stack, Spring Boot, REST APIs</p>
+                <span class="info-sub">Python, SQL, Power BI, Scikit-learn</span>
+              </div>
+            </div>
+
+            <div class="info-card glass-panel">
+              <div class="info-icon"><i class="fa-solid fa-building-user"></i></div>
+              <div class="info-body">
+                <h4>Industry Experience</h4>
+                <p>4 Internship Engagements</p>
+                <span class="info-sub">Amdox, TechOctanet, NovaNector</span>
+              </div>
+            </div>
+
+            <div class="info-card glass-panel">
+              <div class="info-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="info-body">
+                <h4>Certifications</h4>
+                <p>NPTEL &amp; IDTM Certified</p>
+                <span class="info-sub">Java, Python, Data Analytics, ML, PHP, C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Technical Arsenal</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Proficiencies</span></h2>
+          <p class="section-desc">Comprehensive tools, languages, and technologies I use to build scalable products.</p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Backend & Java Ecosystem -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon cat-java"><i class="fa-brands fa-java"></i></div>
+              <div>
+                <h3>Java &amp; Backend Development</h3>
+                <span class="cat-sub">Enterprise APIs &amp; Architecture</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlighted"><i class="fa-brands fa-java"></i> Java (Core &amp; Advanced)</span>
+              <span class="skill-tag highlighted"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+              <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> RESTful APIs</span>
+              <span class="skill-tag"><i class="fa-solid fa-sitemap"></i> MVC Architecture</span>
+              <span class="skill-tag"><i class="fa-solid fa-database"></i> JDBC</span>
+              <span class="skill-tag"><i class="fa-solid fa-server"></i> Servlets &amp; JSP</span>
+            </div>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Backend Architecture &amp; APIs</span>
+                <span>90%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Data Analysis & BI -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon cat-data"><i class="fa-solid fa-chart-pie"></i></div>
+              <div>
+                <h3>Data Analysis &amp; BI</h3>
+                <span class="cat-sub">Insights, Visualization &amp; ML</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlighted"><i class="fa-brands fa-python"></i> Python (Pandas, NumPy)</span>
+              <span class="skill-tag highlighted"><i class="fa-solid fa-chart-simple"></i> Power BI</span>
+              <span class="skill-tag"><i class="fa-solid fa-brain"></i> Scikit-learn (ML)</span>
+              <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Exploratory Data Analysis (EDA)</span>
+              <span class="skill-tag"><i class="fa-solid fa-table"></i> Advanced MS Excel</span>
+              <span class="skill-tag"><i class="fa-solid fa-chart-column"></i> Tableau</span>
+            </div>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Data Cleaning, EDA &amp; Dashboards</span>
+                <span>88%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Databases & Storage -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon cat-db"><i class="fa-solid fa-database"></i></div>
+              <div>
+                <h3>Databases &amp; SQL</h3>
+                <span class="cat-sub">Relational Design &amp; Optimization</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlighted"><i class="fa-solid fa-database"></i> SQL (Queries &amp; Joins)</span>
+              <span class="skill-tag highlighted"><i class="fa-solid fa-server"></i> MySQL</span>
+              <span class="skill-tag highlighted"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> Schema Normalization</span>
+              <span class="skill-tag"><i class="fa-solid fa-bolt"></i> Query Optimization</span>
+            </div>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Relational Modeling &amp; Queries</span>
+                <span>85%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Web & Programming Languages -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon cat-web"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <h3>Web &amp; Other Languages</h3>
+                <span class="cat-sub">Full Stack &amp; Foundations</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5 &amp; CSS3</span>
+              <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+              <span class="skill-tag"><i class="fa-solid fa-c"></i> C Programming</span>
+              <span class="skill-tag"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="skill-tag"><i class="fa-solid fa-flask"></i> Flask</span>
+            </div>
+            <div class="skill-meter">
+              <div class="meter-info">
+                <span>Responsive Frontend &amp; Scripting</span>
+                <span>82%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" style="width: 82%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Tools & Workflow -->
+          <div class="skill-category-card glass-panel full-width">
+            <div class="category-header">
+              <div class="cat-icon cat-tools"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div>
+                <h3>Tools, IDEs &amp; Development Workflow</h3>
+                <span class="cat-sub">Productivity &amp; Version Control</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+              <span class="skill-tag"><i class="fa-solid fa-terminal"></i> VS Code</span>
+              <span class="skill-tag"><i class="fa-solid fa-cubes"></i> Eclipse IDE</span>
+              <span class="skill-tag"><i class="fa-solid fa-laptop-code"></i> NetBeans</span>
+              <span class="skill-tag"><i class="fa-solid fa-file-excel"></i> MS Excel &amp; PowerPoint</span>
+              <span class="skill-tag"><i class="fa-solid fa-paper-plane"></i> Postman / API Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / INTERNSHIPS TIMELINE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Practical Industry Experience</span>
+          <h2 class="section-title">Work &amp; <span class="gradient-text">Internships</span></h2>
+          <p class="section-desc">Hands-on corporate and project experience developing production-grade software.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Amdox -->
+          <div class="timeline-item" data-category="java">
+            <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Java Full Stack Intern</h3>
+                  <h4 class="company-name"><i class="fa-regular fa-building"></i> Amdox</h4>
+                </div>
+                <div class="date-badge"><i class="fa-regular fa-calendar"></i> Jan 2026 – Apr 2026</div>
+              </div>
+              <ul class="timeline-points">
+                <li>
+                  <strong>Task Management System:</strong> Engineered an end-to-end workflow management system supporting <strong>40+ active users</strong> with role-based access control (RBAC) and lifecycle task tracking.
+                </li>
+                <li>
+                  <strong>RESTful API Architecture:</strong> Developed scalable REST APIs using <strong>Spring Boot</strong> to process <strong>100+ daily task operations</strong> seamlessly.
+                </li>
+                <li>
+                  <strong>Database Schema Optimization:</strong> Designed normalized <strong>MySQL</strong> database tables, creating indexed relationships that improved query retrieval efficiency by <strong>20%</strong>.
+                </li>
+                <li>
+                  <strong>MVC Pattern:</strong> Applied strict Model-View-Controller architecture to decouple business logic from presentation, boosting code maintainability.
+                </li>
+              </ul>
+              <div class="tech-pill-list">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Spring Boot</span>
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">MVC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TechOctanet - Java Intern -->
+          <div class="timeline-item" data-category="java">
+            <div class="timeline-dot"><i class="fa-solid fa-code"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Java Programming Intern</h3>
+                  <h4 class="company-name"><i class="fa-regular fa-building"></i> TechOctanet Services</h4>
+                </div>
+                <div class="date-badge"><i class="fa-regular fa-calendar"></i> Feb 2025 – Mar 2025</div>
+              </div>
+              <ul class="timeline-points">
+                <li>
+                  <strong>ATM Simulation System:</strong> Developed a secure transaction processing application using <strong>Java, JSP, and Servlets</strong>.
+                </li>
+                <li>
+                  <strong>Core Banking Features:</strong> Implemented real-time deposit, withdrawal, balance inquiry, and PIN validation workflows with atomic operations.
+                </li>
+                <li>
+                  <strong>Database Persistence:</strong> Integrated <strong>PostgreSQL</strong> via <strong>JDBC</strong> for persistent and acid-compliant storage of transaction records.
+                </li>
+              </ul>
+              <div class="tech-pill-list">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">JSP &amp; Servlets</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">JDBC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TechOctanet - Web Dev Intern -->
+          <div class="timeline-item" data-category="web">
+            <div class="timeline-dot"><i class="fa-brands fa-html5"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Web Development Intern</h3>
+                  <h4 class="company-name"><i class="fa-regular fa-building"></i> TechOctanet Services</h4>
+                </div>
+                <div class="date-badge"><i class="fa-regular fa-calendar"></i> Oct 2024 – Nov 2024</div>
+              </div>
+              <ul class="timeline-points">
+                <li>
+                  <strong>Responsive Web Applications:</strong> Built pixel-perfect, mobile-first web pages using <strong>HTML5, CSS3, JavaScript, and Bootstrap</strong>.
+                </li>
+                <li>
+                  <strong>UI Responsiveness:</strong> Enhanced page render performance and ensured seamless cross-browser compatibility across Chrome, Edge, and Safari.
+                </li>
+              </ul>
+              <div class="tech-pill-list">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NovaNector - Web Dev Intern -->
+          <div class="timeline-item" data-category="web">
+            <div class="timeline-dot"><i class="fa-solid fa-globe"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Web Development Intern</h3>
+                  <h4 class="company-name"><i class="fa-regular fa-building"></i> NovaNector Services</h4>
+                </div>
+                <div class="date-badge"><i class="fa-regular fa-calendar"></i> Sep 2024 – Oct 2024</div>
+              </div>
+              <ul class="timeline-points">
+                <li>
+                  <strong>Frontend Development:</strong> Created modular, clean web components and interactive layouts using HTML, CSS, and vanilla JavaScript.
+                </li>
+                <li>
+                  <strong>Team Collaboration:</strong> Collaborated with senior engineers to deliver customer-facing UI features ahead of project deadlines.
+                </li>
+              </ul>
+              <div class="tech-pill-list">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Real-World Applications</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-desc">Selected projects demonstrating full-stack engineering, machine learning, and data analytics.</p>
+        </div>
+
+        <!-- Project Filter Tabs -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+          <button class="filter-btn" data-filter="java">Java &amp; Spring Boot</button>
+          <button class="filter-btn" data-filter="data">Data Analytics &amp; ML</button>
+          <button class="filter-btn" data-filter="web">Web &amp; Databases</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- PROJECT 1: Task Management System -->
+          <div class="project-card glass-panel" data-category="java">
+            <div class="project-header bg-gradient-java">
+              <div class="project-badge">Full Stack</div>
+              <div class="project-icon"><i class="fa-solid fa-list-check"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Task Management System</h3>
+              <p class="project-desc">
+                Enterprise workflow management platform with role-based access control, task lifecycle monitoring, assignment tracking, and RESTful APIs.
+              </p>
+              
+              <div class="project-stats-strip">
+                <div class="p-stat"><strong>40+</strong> Users Supported</div>
+                <div class="p-stat"><strong>100+</strong> Daily Ops</div>
+                <div class="p-stat"><strong>20%</strong> Query Speedup</div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">RBAC</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary view-project-btn" data-project="task-management">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Nehasonawane31" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Sales Data Analysis Dashboard -->
+          <div class="project-card glass-panel" data-category="data">
+            <div class="project-header bg-gradient-data">
+              <div class="project-badge">Analytics &amp; BI</div>
+              <div class="project-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sales Data Analysis Dashboard</h3>
+              <p class="project-desc">
+                Interactive Power BI &amp; SQL analytics dashboard analyzing 10,000+ sales records to extract revenue patterns, regional trends, and KPI metrics.
+              </p>
+              
+              <div class="project-stats-strip">
+                <div class="p-stat"><strong>10,000+</strong> Records</div>
+                <div class="p-stat"><strong>5+</strong> Visuals</div>
+                <div class="p-stat"><strong>Interactive</strong> Slicers</div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Excel</span>
+                <span class="tag">EDA</span>
+                <span class="tag">DAX</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary view-project-btn" data-project="sales-dashboard">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Nehasonawane31" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Diabetes Prediction System -->
+          <div class="project-card glass-panel" data-category="data">
+            <div class="project-header bg-gradient-ml">
+              <div class="project-badge">Machine Learning</div>
+              <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Diabetes Prediction ML System</h3>
+              <p class="project-desc">
+                Machine learning classification model trained to predict diabetes onset using patient diagnostic variables with exploratory data analysis.
+              </p>
+              
+              <div class="project-stats-strip">
+                <div class="p-stat"><strong>80%</strong> Accuracy</div>
+                <div class="p-stat"><strong>Pandas</strong> Preprocessing</div>
+                <div class="p-stat"><strong>Scikit-Learn</strong></div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Logistic Regression</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary view-project-btn" data-project="diabetes-prediction">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Nehasonawane31" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: E-Banking & ATM System -->
+          <div class="project-card glass-panel" data-category="java">
+            <div class="project-header bg-gradient-banking">
+              <div class="project-badge">Core Java &amp; DB</div>
+              <div class="project-icon"><i class="fa-solid fa-vault"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-Banking &amp; ATM Simulation</h3>
+              <p class="project-desc">
+                Secure banking web application handling transactions, real-time deposits, withdrawals, and balance inquiries with PostgreSQL persistence.
+              </p>
+              
+              <div class="project-stats-strip">
+                <div class="p-stat"><strong>Atomic</strong> Transactions</div>
+                <div class="p-stat"><strong>JDBC</strong> Driver</div>
+                <div class="p-stat"><strong>JSP / Servlets</strong></div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">JSP</span>
+                <span class="tag">Servlets</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">JDBC</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary view-project-btn" data-project="ebanking-system">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Nehasonawane31" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5: Book Recommendation System -->
+          <div class="project-card glass-panel" data-category="data">
+            <div class="project-header bg-gradient-rec">
+              <div class="project-badge">Python &amp; Flask</div>
+              <div class="project-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Book Recommendation System</h3>
+              <p class="project-desc">
+                Intelligent content recommendation system using Python filtering techniques and lightweight Flask REST endpoints backed by MySQL.
+              </p>
+              
+              <div class="project-stats-strip">
+                <div class="p-stat"><strong>Personalized</strong> Feeds</div>
+                <div class="p-stat"><strong>Flask</strong> Backend</div>
+                <div class="p-stat"><strong>MySQL</strong> DB</div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Filtering Algorithms</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary view-project-btn" data-project="book-recommendation">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Nehasonawane31" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6: Online Organ Donation Platform -->
+          <div class="project-card glass-panel" data-category="web">
+            <div class="project-header bg-gradient-web">
+              <div class="project-badge">Web Application</div>
+              <div class="project-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Online Organ Donation Platform</h3>
+              <p class="project-desc">
+                Medical donor-recipient matching platform with secure user registration, search filters for blood group &amp; organs, and PostgreSQL integration.
+              </p>
+              
+              <div class="project-stats-strip">
+                <div class="p-stat"><strong>Instant</strong> Matching</div>
+                <div class="p-stat"><strong>Auth</strong> Module</div>
+                <div class="p-stat"><strong>PostgreSQL</strong></div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary view-project-btn" data-project="organ-donation">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Nehasonawane31" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Credentials &amp; Upskilling</span>
+          <h2 class="section-title">Education &amp; <span class="gradient-text">Certifications</span></h2>
+          <p class="section-desc">Continuous learning, formal degree education, and certified professional achievements.</p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Degrees Column -->
+          <div class="edu-column">
+            <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Academic Degrees</h3>
+            
+            <!-- MCA -->
+            <div class="edu-card glass-panel">
+              <div class="edu-badge">2024 – 2026</div>
+              <h4 class="degree-title">Master of Computer Applications (MCA)</h4>
+              <div class="inst-name">Savitribai Phule Pune University</div>
+              <div class="edu-cgpa">
+                <i class="fa-solid fa-star"></i> <strong>CGPA: 8.03</strong> / 10
+              </div>
+              <p class="edu-details">
+                Advanced coursework in Distributed Systems, Enterprise Java, Advanced Database Management, Software Engineering, and Cloud Technologies.
+              </p>
+            </div>
+
+            <!-- BCS -->
+            <div class="edu-card glass-panel">
+              <div class="edu-badge">2021 – 2024</div>
+              <h4 class="degree-title">Bachelor of Computer Science (BCS)</h4>
+              <div class="inst-name">Savitribai Phule Pune University</div>
+              <div class="edu-cgpa">
+                <i class="fa-solid fa-star"></i> <strong>CGPA: 8.10</strong> / 10 (Distinction)
+              </div>
+              <p class="edu-details">
+                Strong foundation in Data Structures &amp; Algorithms, Object-Oriented Programming (C++/Java), Relational Database Concepts, and Web Technologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="cert-column">
+            <h3 class="column-title"><i class="fa-solid fa-certificate"></i> Professional Certifications</h3>
+            
+            <div class="cert-list">
+              <div class="cert-card glass-panel">
+                <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="cert-info">
+                  <h4>Data Analytics</h4>
+                  <span class="cert-issuer">NPTEL (Ministry of Education, Govt. of India)</span>
+                </div>
+                <span class="cert-tag">NPTEL</span>
+              </div>
+
+              <div class="cert-card glass-panel">
+                <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="cert-info">
+                  <h4>Introduction to Machine Learning</h4>
+                  <span class="cert-issuer">NPTEL</span>
+                </div>
+                <span class="cert-tag">NPTEL</span>
+              </div>
+
+              <div class="cert-card glass-panel">
+                <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+                <div class="cert-info">
+                  <h4>Core Java Programming</h4>
+                  <span class="cert-issuer">IDTM</span>
+                </div>
+                <span class="cert-tag">IDTM</span>
+              </div>
+
+              <div class="cert-card glass-panel">
+                <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                <div class="cert-info">
+                  <h4>Python Programming</h4>
+                  <span class="cert-issuer">IDTM</span>
+                </div>
+                <span class="cert-tag">IDTM</span>
+              </div>
+
+              <div class="cert-card glass-panel">
+                <div class="cert-icon"><i class="fa-brands fa-php"></i></div>
+                <div class="cert-info">
+                  <h4>PHP Development</h4>
+                  <span class="cert-issuer">IDTM</span>
+                </div>
+                <span class="cert-tag">IDTM</span>
+              </div>
+
+              <div class="cert-card glass-panel">
+                <div class="cert-icon"><i class="fa-solid fa-c"></i></div>
+                <div class="cert-info">
+                  <h4>C Programming</h4>
+                  <span class="cert-issuer">IDTM</span>
+                </div>
+                <span class="cert-tag">IDTM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & HIRE ME SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-desc">Open for Software Engineer, Java Developer, and Data Analyst full-time roles &amp; internships.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Quick Templates -->
+          <div class="contact-info-col">
+            <div class="contact-card glass-panel">
+              <h3>Direct Contact Information</h3>
+              <p>Feel free to reach out via email, phone, or LinkedIn. I typically reply within a few hours!</p>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="c-label">Email</span>
+                  <a href="mailto:sonawanen082@gmail.com" class="c-value">sonawanen082@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="c-label">Phone</span>
+                  <a href="tel:+919322228438" class="c-value">+91 9322228438</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div>
+                  <span class="c-label">LinkedIn</span>
+                  <a href="https://linkedin.com/in/neha-sonawane" target="_blank" rel="noopener noreferrer" class="c-value">linkedin.com/in/neha-sonawane</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <span class="c-label">GitHub</span>
+                  <a href="https://github.com/Nehasonawane31" target="_blank" rel="noopener noreferrer" class="c-value">github.com/Nehasonawane31</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="c-label">Location</span>
+                  <span class="c-value">Pune, Maharashtra, India (Open to Relocate / Remote)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recruiter Quick Message Prompts -->
+            <div class="recruiter-box glass-panel">
+              <h4><i class="fa-solid fa-bolt text-yellow"></i> Quick Actions for Recruiters</h4>
+              <div class="quick-prompt-buttons">
+                <button class="btn-prompt" data-subject="Interview Opportunity - Java Full Stack Developer">
+                  💼 Schedule an Interview (Java)
+                </button>
+                <button class="btn-prompt" data-subject="Interview Opportunity - Data Analyst Role">
+                  📊 Discuss Data Analyst Role
+                </button>
+                <button class="btn-prompt" data-subject="Resume Request &amp; Candidate Discussion">
+                  📄 Request Detailed CV &amp; Code Samples
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-col">
+            <form id="contact-form" class="contact-form glass-panel">
+              <h3>Send a Direct Message</h3>
+              <p class="form-sub">Looking forward to discussing opportunities with your team.</p>
+
+              <div class="form-group">
+                <label for="name">Your Name / Recruiter Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" placeholder="e.g. Sarah Jenkins (Tech Recruiter)" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work Email</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" placeholder="e.g. s.jenkins@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject / Role</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-briefcase input-icon"></i>
+                  <input type="text" id="subject" name="subject" placeholder="e.g. Job Opportunity: Software Engineer" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment input-icon"></i>
+                  <textarea id="message" name="message" rows="4" placeholder="Hello Neha, we reviewed your portfolio and would love to discuss an open role..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="send-btn">
+                <i class="fa-regular fa-paper-plane"></i> Send Message
+              </button>
+              
+              <div id="form-feedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="nav-brand">
+          <span class="brand-code">&lt;</span>
+          <span class="brand-name">Neha Sonawane</span>
+          <span class="brand-code">/&gt;</span>
+        </a>
+        <p>Built with passion, clean code, and modern web technologies.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p>&copy; <span id="current-year"></span> Neha Sonawane. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/neha-sonawane" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Nehasonawane31" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:sonawanen082@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME PREVIEW & DOWNLOAD MODAL -->
+  <div id="resume-modal" class="modal">
+    <div class="modal-overlay" id="resume-modal-overlay"></div>
+    <div class="modal-container glass-panel modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-file-lines text-cyan"></i>
+          <h3>Neha Sonawane — Professional Resume</h3>
+        </div>
+        <div class="modal-actions-top">
+          <button id="print-resume-btn" class="btn btn-sm btn-primary" title="Print or Save as PDF">
+            <i class="fa-solid fa-print"></i> Print / PDF
+          </button>
+          <button class="modal-close" id="close-resume-btn" aria-label="Close Modal">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body resume-document" id="printable-resume">
+        <!-- Resume Header -->
+        <div class="res-header">
+          <h2>Neha Sonawane</h2>
+          <div class="res-contact-row">
+            <span><i class="fa-solid fa-envelope"></i> sonawanen082@gmail.com</span>
+            <span><i class="fa-solid fa-phone"></i> +91 9322228438</span>
+            <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/neha-sonawane</span>
+            <span><i class="fa-brands fa-github"></i> github.com/Nehasonawane31</span>
+            <span><i class="fa-solid fa-location-dot"></i> Pune, India</span>
+          </div>
+        </div>
+
+        <!-- Objective -->
+        <div class="res-section">
+          <h4 class="res-title">Career Objective</h4>
+          <p class="res-text">
+            Results-driven MCA graduate with solid foundational and internship experience in <strong>Java Full Stack development (Spring Boot, REST APIs, PostgreSQL/MySQL)</strong> and <strong>Data Analysis (Python, Power BI, SQL, EDA)</strong>. Proven record of engineering scalable workflow systems for 40+ users and extracting high-impact business insights from 10,000+ data records. Eager to contribute to a forward-thinking engineering team.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div class="res-section">
+          <h4 class="res-title">Education</h4>
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>Master of Computer Applications (MCA)</strong>
+              <span>2024 – 2026 | CGPA: 8.03</span>
+            </div>
+            <div class="res-sub">Savitribai Phule Pune University</div>
+          </div>
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>Bachelor of Computer Science (BCS)</strong>
+              <span>2021 – 2024 | CGPA: 8.10 (Distinction)</span>
+            </div>
+            <div class="res-sub">Savitribai Phule Pune University</div>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="res-section">
+          <h4 class="res-title">Technical Skills</h4>
+          <div class="res-skills-grid">
+            <p><strong>Languages:</strong> Java (Core &amp; Advanced), Python, SQL, C, PHP, JavaScript (ES6+), HTML5/CSS3</p>
+            <p><strong>Backend &amp; Frameworks:</strong> Spring Boot, RESTful APIs, JDBC, JSP, Servlets, MVC Architecture, Flask</p>
+            <p><strong>Data &amp; BI:</strong> Power BI, Pandas, NumPy, Scikit-learn, EDA, Tableau, MS Excel (Formulas &amp; Pivots)</p>
+            <p><strong>Databases:</strong> MySQL, PostgreSQL, Relational Normalization, Indexing</p>
+            <p><strong>Tools &amp; Version Control:</strong> Git, GitHub, VS Code, Eclipse, NetBeans, Postman</p>
+          </div>
+        </div>
+
+        <!-- Internship Experience -->
+        <div class="res-section">
+          <h4 class="res-title">Internship Experience</h4>
+          
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>Java Full Stack Intern — Amdox</strong>
+              <span>Jan 2026 – Apr 2026</span>
+            </div>
+            <ul class="res-bullets">
+              <li>Engineered a Task Management System supporting 40+ users with role-based access control and task lifecycle tracking.</li>
+              <li>Developed RESTful APIs using Spring Boot handling 100+ daily task operations with high reliability.</li>
+              <li>Designed normalized MySQL database schema, improving query execution efficiency by 20%.</li>
+              <li>Applied MVC architecture to ensure high code quality, testability, and modularity.</li>
+            </ul>
+          </div>
+
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>Java Programming Intern — TechOctanet Services</strong>
+              <span>Feb 2025 – Mar 2025</span>
+            </div>
+            <ul class="res-bullets">
+              <li>Developed ATM Simulation System using Java, JSP, and Servlets for secure transaction processing.</li>
+              <li>Implemented core banking features including deposit, withdrawal, and balance inquiry.</li>
+              <li>Integrated PostgreSQL database using JDBC for persistent, ACID-compliant data management.</li>
+            </ul>
+          </div>
+
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>Web Development Intern — TechOctanet Services</strong>
+              <span>Oct 2024 – Nov 2024</span>
+            </div>
+            <ul class="res-bullets">
+              <li>Built responsive, cross-browser compatible web pages using HTML, CSS, JavaScript, and Bootstrap.</li>
+            </ul>
+          </div>
+
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>Web Development Intern — NovaNector Services</strong>
+              <span>Sep 2024 – Oct 2024</span>
+            </div>
+            <ul class="res-bullets">
+              <li>Developed modern responsive web interfaces adhering to clean UI/UX standards.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Key Projects -->
+        <div class="res-section">
+          <h4 class="res-title">Featured Projects</h4>
+          
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>Task Management System</strong> <em>(Java, Spring Boot, MySQL, REST APIs)</em>
+            </div>
+            <p class="res-sub-text">Workflow management system enabling role-based task delegation, deadline tracking, and secure authentication.</p>
+          </div>
+
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>Sales Data Analysis Dashboard</strong> <em>(Power BI, Excel, SQL, EDA)</em>
+            </div>
+            <p class="res-sub-text">Analyzed 10,000+ sales records to identify revenue trends, built dynamic Power BI visuals with slicers and KPI tracking.</p>
+          </div>
+
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>Diabetes Prediction System</strong> <em>(Python, Pandas, Scikit-learn)</em>
+            </div>
+            <p class="res-sub-text">Trained Logistic Regression model on patient diagnostic dataset, reaching ~80% binary prediction accuracy.</p>
+          </div>
+
+          <div class="res-item">
+            <div class="res-item-head">
+              <strong>E-Banking &amp; ATM Simulation System</strong> <em>(Java, JSP, Servlets, PostgreSQL, JDBC)</em>
+            </div>
+            <p class="res-sub-text">Developed transactional banking portal handling deposits, withdrawals, and balance verification.</p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="res-section">
+          <h4 class="res-title">Certifications</h4>
+          <p class="res-text">
+            • Data Analytics (NPTEL) &nbsp;|&nbsp; • Introduction to Machine Learning (NPTEL) &nbsp;|&nbsp; • Core Java Programming (IDTM) &nbsp;|&nbsp; • Python Programming (IDTM) &nbsp;|&nbsp; • PHP Development (IDTM) &nbsp;|&nbsp; • C Programming (IDTM)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div id="project-modal" class="modal">
+    <div class="modal-overlay" id="project-modal-overlay"></div>
+    <div class="modal-container glass-panel modal-md">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-folder-open text-cyan" id="modal-project-icon"></i>
+          <h3 id="modal-project-title">Project Details</h3>
+        </div>
+        <button class="modal-close" id="close-project-btn" aria-label="Close Modal">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modal-project-content">
+        <!-- Injected via JavaScript dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
